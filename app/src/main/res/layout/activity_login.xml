@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- عنوان الشاشة -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الدخول"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <!-- البريد الإلكتروني -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:hint="Tareq@gmail.com"
+            android:inputType="textEmailAddress"
+            android:layoutDirection="rtl"
+            android:textAlignment="viewStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- كلمة المرور -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:hint="**********"
+            android:inputType="textPassword"
+            android:layoutDirection="rtl"
+            android:textAlignment="viewStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <!-- زر تسجيل الدخول -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="تسجيل الدخول"
+            android:onClick="goToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF9800"
+            />
+
+        <!-- نص بدلاً من زر (إنشاء حساب جديد) -->
+        <TextView
+            android:id="@+id/txtGoToSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="إنشاء حساب جديد"
+            android:onClick="goToSignup"
+            android:textColor="#FF9800"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>

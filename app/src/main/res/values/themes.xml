@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TareqRes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+   <style name="Theme.TareqRes" parent="Theme.AppCompat.Light.NoActionBar" >
+    <item name="android:popupMenuStyle">@style/CustomPopupMenu</item>
+   </style>
+
+
+    <style name="CustomPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <!-- لون الخلفية -->
+        <item name="android:popupBackground">#FF9800</item>
+        <!-- لون النص -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

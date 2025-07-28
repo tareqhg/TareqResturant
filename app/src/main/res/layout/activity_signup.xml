@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- عنوان الشاشة -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إنشاء حساب جديد"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <!-- الاسم الكامل -->
+        <EditText
+            android:id="@+id/edtName"
+            android:hint="طارق هيثم أبو الجبين'"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- البريد الإلكتروني -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:hint="Tareq@gmail.com"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layoutDirection="rtl"
+
+            android:textAlignment="viewStart"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <!-- كلمة المرور -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:hint="**********"
+            android:inputType="textPassword"
+            android:layoutDirection="rtl"
+            android:textAlignment="viewStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <!-- زر إنشاء حساب -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:text="إنشاء حساب"
+            android:onClick="signupAndGoHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF9800"
+
+            />
+
+        <!-- رابط تسجيل الدخول -->
+        <TextView
+            android:id="@+id/txtGoToLogin"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="لديك حساب؟ تسجيل الدخول"
+            android:onClick="goToLogin"
+            android:textColor="#FF9800"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>
